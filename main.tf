@@ -1,4 +1,3 @@
-"main.tf" 21L, 376C
 terraform {
   required_version = ">= 0.11, < 0.12"
 }
