@@ -5,6 +5,7 @@ terraform {
 provider "aws" {
   region = "ap-south-1"
   version = "~> 2.0"
+  shared_credentials_file = "~/.aws/credentials"
 }
 
 resource "aws_instance" "example" {
