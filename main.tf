@@ -47,8 +47,8 @@ resource "aws_db_instance" "default" {
 provider "aws" {
   region = "ap-south-1"
   version = "~> 2.0"
-  access_key              = "AKIAIB7RTJ3EOONX5C7A"
-  secret_key              = "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"
+  access_key = "AKIAIB7RTJ3EOONX5C7A"
+  secret_key = "YGZ3u2MueMadADj5OCMKUqh7ZYU5AQhEFXny4wzV"
 }
 
 resource "aws_instance" "example" {
