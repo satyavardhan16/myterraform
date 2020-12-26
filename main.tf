@@ -47,7 +47,8 @@ resource "aws_db_instance" "default" {
 provider "aws" {
   region = "ap-south-1"
   version = "~> 2.0"
-  shared_credentials_file = "/home/bitnami/.aws/credentials"
+  access_key              = "AKIAIB7RTJ3EOONX5C7A"
+  secret_key              = "YGZ3u2MueMadADj5OCMKUqh7ZYU5AQhEFXny4wzV"
 }
 
 resource "aws_instance" "example" {
