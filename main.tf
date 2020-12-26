@@ -1,13 +1,5 @@
 terraform {
   required_version = "0.11.13"
-  backend "s3"  {
-      bucket  = "terraform-state-satya"
-      key = "global/s3/terraform.tfstate"
-      region = "ap-south-1"
-      dynamodb_table  = "terraform-state-locking"
-      shared_credentials_file = "/home/bitnami/.aws/credentials"
-      encrypt = true
-    }
 }
 resource "aws_s3_bucket" "terraform_state" {
     bucket  = "terraform-state-satya"
@@ -38,8 +30,6 @@ resource "aws_dynamodb_table" "terraform_locks" {
     type  = "S"
     }
   }
-    
-  
   
 resource "aws_db_instance" "default" {
   allocated_storage = 5
