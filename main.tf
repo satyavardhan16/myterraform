@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "terraform_state" {
   versioning  {
     enabled = true
     }
-  server_side_encryption_configuration_by_default {
+  server_side_encryption_configuration {
     rule  {
       apply_server_side_encryption_by_default {
         see_algorithm = "AES256"
