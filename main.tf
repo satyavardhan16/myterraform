@@ -1,7 +1,6 @@
 terraform {
   required_version = "0.11.13"
     }
-}
 resource "aws_s3_bucket" "terraform_state" {
     bucket  = "terraform-state-satya"
   
